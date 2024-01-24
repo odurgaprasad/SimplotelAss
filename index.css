@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+
+}
+.nav-items{
+    width: 1024.5px;
+    height: 40.094px;
+    flex-shrink: 0;
+    background-color: hsl(0, 100%, 72%);
+    list-style-type: none;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.items{
+    color: #000;
+    font-family: Inter;
+    font-size: 13.9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.menuIcon{
+    height: 40px;
+    width: 70px;
+}
+.menuIcon:hover{
+    color: white;
+}
+
+
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+
+.container{
+    background-image: linear-gradient(to right ,rgb(249, 245, 236),rgb(225, 202, 146),rgb(234, 151, 229));
+    height: 100%;
+}
+
+.first-page{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.card-container{
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+}
+.card-heading{
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Roboto;
+}
+.card-paragraph{
+    font-size: 20px;
+    font-weight: 200;
+    padding-bottom: 70px;
+    word-spacing: 5px;
+    line-height:30px;
+}
+.button{
+    background-color: rgba(255, 113, 113, 1);
+    width: 50%;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    height: 40px;
+}
+.burgerimage{
+    height: 100%;
+    width: 100%;
+    padding-left: none;
+    padding-top: none;
+    padding-bottom: none;
+}
+.second-page{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    height: 100%;
+}
+.two{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.image-container{
+    display: grid;
+    grid-template-columns:auto 50%;
+    grid-template-rows: auto 50%;
+    height: 70%;
+    width: 70%;
+    margin: 50px;
+    margin-right: 50px;
+}
+.image0{
+    height: 95%;
+    width: 95%;
+    min-height: 300px;
+    max-height: 1000px;
+}
+.image2{
+    width: 95%;
+    height: 95%;
+    min-height: 300px;
+    max-height: 900px;
+    min-width: 300px;
+    max-width: 600px;
+}
+.image1,.image3{
+    max-width: 300px;
+    max-height: 300px;
+
+}
+
+.box-container{
+    background-color: rgba(255, 113, 113, 1);
+    height: 50%;
+    width: 60%;
+    padding: 40px;
+    min-height: 100px;
+    max-width: 400px;
+    margin:130px 40px 100px 90px;
+    
+}
+.sub-heading{
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.heading{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.click_button{
+    color: white;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.arrow-icon{
+    height: 20px;
+    width: 40px;
+}
+
+
+
+
+
+
+@media  screen and (max-width:576px) {
+    .nav-items{
+        display: none;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .dropbtn {
+        background-color: rgba(255, 113, 113, 1);
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        
+      }
+      
+      .dropdown {
+        position: relative;
+        display: block;
+        background-color: rgba(255, 113, 113, 1);
+        
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      .dropdown:hover .dropbtn {background-color: #d2ebd2;}
+    
+
+    
+    .card-container{
+        width: 100%;
+        padding:20px 10px 10px 10px;
+        height: 70%;
+
+    }
+    .card-heading{
+        font-size: 20px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Roboto;
+    }
+    .card-paragraph{
+        font-size: 10px;
+        font-weight: 200;
+        padding-bottom: 10px;
+        line-height:normal;
+    }
+    .button{
+        background-color: hsl(0, 100%, 72%);
+        width: 100%;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        height: 40px;
+    }
+    .burgerimage{
+        height: 100%;
+        width: 100%;
+    }
+    .first-page{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+    }
+    .second-page{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        height: 100%;
+    }
+    .two{
+        display: grid;
+        grid-template-columns:100%;
+    }
+    .image-container{
+        display: grid;
+        grid-template-columns:50% 50%;
+        grid-template-rows: 50% 50%s;
+        height: 80%;
+        width: 90%;
+        margin: 20px;
+    }
+    .image0{
+        height: 95%;
+        width: 95%;
+        min-height: 100px;
+        max-height: 500px;
+    }
+    .image2{
+        width: 95%;
+        height: 95%;
+        min-height: 150px;
+        max-height: 200px;
+        min-width: 100px;
+        max-width: 200px;
+        
+    }
+    .image1,.image3{
+        max-width: 100px;
+        max-height: 100px;
+        padding: 3px;
+    
+    }
+    
+    .box-container{
+        background-color: hsl(0, 100%, 72%);
+        max-width: 300px;
+        max-height: 300px;
+        height: 65%;
+        width: 60%;
+        padding: 10px;
+        margin: 40px 40px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .sub-heading{
+        font-size: 10px;
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+    
+    .heading{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .click_button{
+        color: white;
+        font-size: 10px;
+        padding-top: 10px;
+    }
+    .arrow-icon{
+        height: 10px;
+        width: 20px;
+    }
+    
+}
+
+
+
+
+
+
+@media  screen and (min-width:577px) and (max-width:786px) {
+    .nav-items{
+        display: block;
+    }
+    .nav-items{
+        width: 1024.5px;
+        height: 40.094px;
+        flex-shrink: 0;
+        background-color: hsl(0, 100%, 72%);
+        list-style-type: none;
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+    .items{
+        color: #000;
+        font-family: Inter;
+        font-size: 13.9px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        
+    }
+    
+    .menuIcon{
+        height: 40px;
+        width: 70px;
+    }
+    .menuIcon:hover{
+        color: white;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+
+
+      
+      .dropdown {
+        position: relative;
+        display: none;
+        background-color: rgba(255, 113, 113, 1);
+        
+      }
+      
+
+    
+    .card-container{
+        width: 100%;
+        padding:20px 10px 10px 10px;
+        height: 70%;
+
+    }
+    .card-heading{
+        font-size: 20px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Roboto;
+    }
+    .card-paragraph{
+        font-size: 10px;
+        font-weight: 200;
+        padding-bottom: 10px;
+        line-height:normal;
+    }
+    .button{
+        background-color: hsl(0, 100%, 72%);
+        width: 100%;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        height: 40px;
+    }
+    .burgerimage{
+        height: 100%;
+        width: 100%;
+    }
+    .first-page{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+    }
+    .second-page{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        height: 100%;
+    }
+    .two{
+        display: grid;
+        grid-template-columns:100%;
+    }
+    .image-container{
+        display: grid;
+        grid-template-columns:50% 50%;
+        grid-template-rows: 50% 50%s;
+        height: 80%;
+        width: 90%;
+        margin: 20px;
+    }
+    .image0{
+        height: 95%;
+        width: 95%;
+        min-height: 200px;
+        max-height: 500px;
+    }
+    .image2{
+        width: 95%;
+        height: 95%;
+        min-height: 150px;
+        max-height: 400px;
+        min-width: 200px;
+        max-width: 400px;
+        margin-right: 10px;
+    }
+    .image1,.image3{
+        max-width: 200px;
+        max-height: 200px;
+        padding: 3px;
+    
+    }
+    
+    
+    
+    .box-container{
+        background-color: hsl(0, 100%, 72%);
+        max-width: 300px;
+        max-height: 300px;
+        height: 50%;
+        width: 60%;
+        padding: 10px;
+        margin: 60px 60px;
+        overflow: hidden;
+    }
+    .sub-heading{
+        font-size: 20px;
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+    
+    .heading{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    .click_button{
+        color: white;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .arrow-icon{
+        height: 20px;
+        width: 30px;
+    }
+    
+}
